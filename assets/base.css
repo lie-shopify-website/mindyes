@@ -11,19 +11,32 @@
    font-display: swap;
 } */
 
-@font-face {
+/* @font-face {
    font-family: 'Brand';
    src:url('https://cdn.shopify.com/s/files/1/0649/8117/2266/files/Lato-Regular.ttf?v=1747908841') format('truetype');
    font-display: swap;
-}
+} */
 
 
 
 .pc {display:block;}
 .mb {display:none;}
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 989px) {
 	.pc {display:none;}
 	.mb {display:block;}
+}
+
+@media screen and (max-width: 989px) {
+  .mobile-hidden { display: none !important; }
+}
+@media screen and (min-width: 990px) { 
+  .desktop-hidden { display: none !important; }
+}
+
+@media screen and (min-width: 990px) { 
+  main#MainContent {
+    margin-top: 12px;
+  }
 }
 
 /* CSS */
@@ -39,9 +52,6 @@
   transition: opacity 0.3s ease; /* 可选：添加一个淡入效果 */
 }
 
-header.header {
-    background: #f6f6f6;
-}
 a {
     color: inherit;
     text-decoration: none;
@@ -142,7 +152,6 @@ td {
 
 /* base */
 body {
-  max-width:1920px;
   margin:auto;
 }
 html {
@@ -172,8 +181,34 @@ a { text-decoration:auto; }
 
 .page-width {
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding-left: 24px;
+  padding-right: 24px;
 }
+@media(min-width: 768px) {
+  .page-width {
+      padding-left: 32px;
+      padding-right: 32px
+  }
+}
+
+@media(min-width: 1280px) {
+  .page-width {
+      padding-left: 48px;
+      padding-right: 48px
+  }
+}
+
+@media(min-width: 1536px) {
+  .page-width {
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: var(--page-width);
+  }
+}
+
+
 
 body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   max-width: 100%;
@@ -194,10 +229,6 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 }
 
 @media screen and (min-width: 750px) {
-  .page-width {
-    padding: 0 10%;
-  }
-
   .utility-bar__grid.page-width {
     padding-left: 3.2rem;
     padding-right: 3.2rem;
@@ -220,10 +251,6 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   .page-width--narrow {
     max-width: 72.6rem;
     padding: 0;
-  }
-
-  .page-width-desktop {
-    padding: 0 10%;
   }
 }
 
