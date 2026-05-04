@@ -1,0 +1,148 @@
+{% schema %}
+{
+  "name": "服务图标",
+  "settings": [
+    { "type": "header","content":"颜色"},
+    { "type": "color", "id": "text_color", "label": "文字颜色", "default": "#000000" },
+    { "type": "color", "id": "bg_color", "label": "背景颜色", "default": "#ffffff" },
+    { "type": "color", "id": "bg_color_mb", "label": "背景颜色 (手机端)", "default": "#fcf9f1" },
+    { "type": "checkbox", "id": "remove_top_padding", "label": "移除上边距", "default": false },
+    { "type": "checkbox", "id": "remove_bottom_padding", "label": "移除下边距", "default": false },
+    { "type": "text", "id": "custom_class", "label": "自定义类名" }
+  ],
+  "blocks": [
+    {
+        "type": "item",
+        "name": "图标",
+        "settings": [
+            { "type": "header","content":"图片"},
+            { "type": "image_picker", "id": "icon", "label": "图标" },
+            { "type": "textarea", "id": "icon_text", "label": "图标文字" }
+        ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "定制模块",
+      "name": "服务图标"
+    }
+  ]
+}
+{% endschema %}
+
+
+<style>
+    .cm-service-icon-wrapper {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    .cm-service-icon-wrapper.remove-top-padding {
+        padding-top: 0 !important;
+    }
+    .cm-service-icon-wrapper.remove-bottom-padding {
+        padding-bottom: 0 !important;
+    }
+    .cm-service-icon { 
+        --text-color: {{ section.settings.text_color }}; 
+        --bg-color: {{ section.settings.bg_color }}; 
+        --bg-color-mb: {{ section.settings.bg_color_mb }}; 
+        background-color: var(--bg-color-mb);
+    }
+    .cm-service-icon .layout-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    .cm-service-icon .layout-container::-webkit-scrollbar {
+        display: none;
+    }
+    .cm-service-icon .service-icon_items {
+        width: max-content;
+        height: 44px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        display: flex;
+        gap: 12px;
+    }
+    .cm-service-icon .service-icon_item {
+        flex: 0 0 160px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 8px;
+    }
+    
+    .cm-service-icon .item-icon {
+        flex: 0 0 32px;
+        max-width: 32px;
+    }
+    .cm-service-icon .item-icon img {
+        max-height: 24px;
+    }
+    .cm-service-icon .item-text {
+        color: var(--text-color);
+        font-size: 12px;
+        line-height: 1.1;
+    }
+
+    @media (min-width:990px) {
+        .cm-service-icon {
+            background-color: var(--bg-color);
+        }
+        .cm-service-icon .service-icon_items {
+            width: 100%;
+            height: 50px;
+            gap:0;
+        }
+        .cm-service-icon .service-icon_item {
+            flex: 0 0 25%;
+            max-width: 25%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .cm-service-icon .item-text {
+            font-size: 14px;
+        }
+    }
+</style>
+<div class="cm-service-icon-wrapper {% if section.settings.remove_top_padding %}remove-top-padding{% endif %} {% if section.settings.remove_bottom_padding %}remove-bottom-padding{% endif %}">
+<div class="cm-service-icon {{ section.settings.custom_class }}" data-section-id="{{ section.id }}">
+    <div class="layout-container page-width">
+        <div class="service-icon_items">
+            {% for block in section.blocks %}
+                {% if block.settings.icon != blank and block.settings.icon_text != blank %}
+                <div class="service-icon_item">
+                    <div class="item-icon">
+                        {% liquid
+                            assign pc_src = block.settings.icon | image_url: width: block.settings.icon.width
+                            assign pad_src = block.settings.icon | image_url: width: block.settings.icon.width
+                            assign m_src = block.settings.icon | image_url: width: block.settings.icon.width
+                        %}
+                        
+                        {% render 'resp-img'
+                            pc_src: pc_src,
+                            pad_src: pad_src,
+                            m_src: m_src,
+                            class_name: 'resp-img-class',
+                            alt: block.settings.icon_text
+                        %}
+                    </div>
+
+                    <div class="item-text">
+                        {{ block.settings.icon_text }}
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+</div>

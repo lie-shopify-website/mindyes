@@ -1,4 +1,14 @@
 
+.cm-slideshow p {
+    margin: 0;
+}
+.cm-slideshow .slide-image a {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+
 .cm-slideshow .page-width {
     padding-left: 0;
     padding-right: 0;
@@ -61,16 +71,62 @@
     -ms-flex-direction: column;
     flex-direction: column;
     height: 100%;
-    text-align: center
 }
 
 .cm-slideshow .swiper-box .content .content-container {
     max-width: var(--content-area-width-mb);
-    width: 100%
+    width: 100%;
+    pointer-events: all;
 }
 .cm-slideshow .swiper-box .content .slide_block_item {
     text-align: var(--content-align-mb);
 }
+.cm-slideshow .slide_block_item + .slide_block_item {
+    margin-top: 16px;
+}
+
+
+.cm-slideshow .sale_label-inner {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 12px;
+    color: var(--sale-label-color-mb);
+    background: var(--sale-label-bg-mb);
+    border-radius: 32px;
+    font-size: 10px;
+}
+
+.cm-slideshow .slide_title-inner {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--text-color-mb);
+    line-height: 1.1;
+}
+
+.cm-slideshow .slide_info {
+    color: var(--text-color-mb);
+    line-height: 1.2;
+    font-size: 14px;
+}
+
+.cm-slideshow .slide_button .mf-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    background-color: var(--slide-button-bg-mb);
+    color: var(--slide-button-color-mb);
+    padding: 6px 24px;
+    border-radius: 50px;
+    transition: all 0.2s ease-in-out;
+}
+
+.cm-slideshow .slide_button.slide_block_item {
+    margin-top: 32px;
+}
+
+
 
 @media (max-width:989px) {
     .cm-slideshow .swiper-box .content [data-content-position-mb=left_top] {
@@ -253,5 +309,32 @@
 
     .cm-slideshow .swiper-box .content .slide_block_item {
         text-align: var(--content-align);
+    }
+
+    .cm-slideshow .sale_label-inner {
+        color: var(--sale-label-color);
+        background: var(--sale-label-bg);
+        font-size: 12px;
+    }
+    
+    .cm-slideshow .slide_title-inner {
+        font-size: 48px;
+        color: var(--text-color);
+    }
+    
+    .cm-slideshow .slide_info {
+        color: var(--text-color);
+        line-height: 1.3;
+        font-size: 16px;
+    }
+    
+    .cm-slideshow .slide_button .mf-btn {
+        font-size: 16px;
+        background-color: var(--slide-button-bg);
+        color: var(--slide-button-color);
+        padding: 8px 32px;
+    }
+    .cm-slideshow .slide_button .mf-btn:hover {
+        opacity: 0.8;
     }
 }

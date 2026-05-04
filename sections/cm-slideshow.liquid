@@ -80,6 +80,13 @@
                 "label": "内容对齐 (手机端)"
             },
 
+            { "type": "checkbox", "id": "show_sale_label", "label": "显示销售标签", "default": true },
+            { "type": "text", "id": "sale_label", "label": "销售标签文字", "default": "Hot Selling" },
+            { "type": "color", "id": "sale_label_color", "label": "销售标签文字颜色", "default": "#ffffff" },
+            { "type": "color", "id": "sale_label_color_mb", "label": "销售标签文字颜色 (手机端)", "default": "#ffffff" },
+            { "type": "color", "id": "sale_label_bg", "label": "销售标签背景颜色", "default": "#e56321" },
+            { "type": "color", "id": "sale_label_bg_mb", "label": "销售标签背景颜色 (手机端)", "default": "#e56321" },
+
             { "type": "image_picker", "id": "slide_title_image", "label": "标题图片" },
             { "type": "image_picker", "id": "slide_title_image_mb", "label": "标题图片 (手机端)" },
             { "type": "textarea", "id": "slide_sub_title", "label": "小标题" },
@@ -217,6 +224,10 @@
                                 <div class="content-inner" data-content-position="{{ block.settings.content_position }}" data-content-position-mb="{{ block.settings.content_position_mb }}">
                                     <div class="content-container">
                                     
+                                    {% if block.settings.show_sale_label and block.settings.sale_label != blank %} 
+                                        <div class="sale_label slide_block_item"><div class="sale_label-inner">{{ block.settings.sale_label }}</div></div> 
+                                    {% endif %}
+
                                     {% if block.settings.slide_title_image != blank %} 
                                         <div class="slide_title_image slide_block_item">
                                             {% liquid
@@ -234,6 +245,7 @@
                                             %}
                                         </div> 
                                     {% endif %}
+
                                     {% if block.settings.slide_sub_title != blank %} <div class="slide_sub_title slide_block_item">{{ block.settings.slide_sub_title }}</div> {% endif %}
                                     {% if block.settings.slide_title != blank %} <div class="slide_title slide_block_item"><{{ block.settings.slide_title_type }} class="slide_title-inner">{{ block.settings.slide_title }}</{{ block.settings.slide_title_type }}></div> {% endif %}
                                     {% if block.settings.slide_info != blank %} <div class="slide_info slide_block_item">{{ block.settings.slide_info }}</div> {% endif %}
@@ -257,6 +269,10 @@
                                         --slide-button-bg-mb:{{ block.settings.slide_button_bg_mb }};
                                         --content-align:{{ block.settings.content_align }};
                                         --content-align-mb:{{ block.settings.content_align_mb }};
+                                        --sale-label-color:{{ block.settings.sale_label_color }};
+                                        --sale-label-bg:{{ block.settings.sale_label_bg }};
+                                        --sale-label-color-mb:{{ block.settings.sale_label_color_mb }};
+                                        --sale-label-bg-mb:{{ block.settings.sale_label_bg_mb }};
                                     }
                                 </style>
                             </div>

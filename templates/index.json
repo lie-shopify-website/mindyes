@@ -14,106 +14,134 @@
       "blocks": {
         "slide_kyPAF6": {
           "type": "slide",
-          "disabled": false,
           "settings": {
             "slide_image": "shopify://shop_images/hero-banner-001.jpg",
             "slide_image_mb": "shopify://shop_images/hero-banner-mb001.jpg",
             "desktop_shadow": true,
-            "content_area_width": 530,
+            "content_area_width": 460,
             "content_area_width_mb": 375,
-            "content_position": "left_bottom",
-            "content_position_mb": "center_bottom",
+            "content_position": "left_center",
+            "content_position_mb": "center_top",
             "content_align": "left",
-            "content_align_mb": "left",
+            "content_align_mb": "center",
+            "show_sale_label": true,
+            "sale_label": "Hot Selling",
+            "sale_label_color": "#ffffff",
+            "sale_label_color_mb": "#ffffff",
+            "sale_label_bg": "#e56321",
+            "sale_label_bg_mb": "#e56321",
             "slide_sub_title": "",
-            "slide_title": "",
+            "slide_title": "Dog House",
             "slide_title_type": "p",
-            "slide_info": "",
-            "text_color": "#fafafa", 
-            "text_color_mb": "#141414",
+            "slide_info": "All-weather resin | Cool in summer, warm in winter. Your dog deserves the best",
+            "text_color": "#ffffff",
+            "text_color_mb": "#000000",
             "slide_button_switch": true,
-            "slide_button_text": "",
-            "slide_button_url": "",
-            "slide_button_color": "#141414",
-            "slide_button_bg": "#fed100"
+            "slide_button_text": "Shop Now",
+            "slide_button_url": "https://www.google.com",
+            "slide_button_color": "#355da2",
+            "slide_button_bg": "#ffffff",
+            "slide_button_color_mb": "#ffffff",
+            "slide_button_bg_mb": "#000000"
           }
         },
         "slide_8aNVzD": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "slide_image": "shopify://shop_images/hero-banner-002.jpg",
             "slide_image_mb": "shopify://shop_images/hero-banner-mb002.jpg",
             "desktop_shadow": true,
-            "content_area_width": 530,
+            "content_area_width": 460,
             "content_area_width_mb": 375,
-            "content_position": "left_bottom",
-            "content_position_mb": "center_bottom",
+            "content_position": "left_center",
+            "content_position_mb": "center_top",
             "content_align": "left",
-            "content_align_mb": "left",
+            "content_align_mb": "center",
+            "show_sale_label": true,
+            "sale_label": "Hot Selling",
+            "sale_label_color": "#ffffff",
+            "sale_label_color_mb": "#ffffff",
+            "sale_label_bg": "#e56321",
+            "sale_label_bg_mb": "#e56321",
             "slide_sub_title": "",
-            "slide_title": "",
+            "slide_title": "Dog House",
             "slide_title_type": "p",
-            "slide_info": "",
-            "text_color": "#fafafa",
-            "text_color_mb": "#141414",
+            "slide_info": "All-weather resin | Cool in summer, warm in winter. Your dog deserves the best",
+            "text_color": "#ffffff",
+            "text_color_mb": "#000000",
             "slide_button_switch": true,
-            "slide_button_text": "",
-            "slide_button_url": "",
-            "slide_button_color": "#141414",
-            "slide_button_bg": "#fed100"
+            "slide_button_text": "Shop Now",
+            "slide_button_url": "https://www.google.com",
+            "slide_button_color": "#355da2",
+            "slide_button_bg": "#ffffff",
+            "slide_button_color_mb": "#ffffff",
+            "slide_button_bg_mb": "#000000"
           }
         },
         "slide_9YRng9": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "slide_image": "shopify://shop_images/hero-banner-003.jpg",
             "slide_image_mb": "shopify://shop_images/hero-banner-mb003.jpg",
             "desktop_shadow": true,
-            "content_area_width": 530,
+            "content_area_width": 460,
             "content_area_width_mb": 375,
-            "content_position": "left_bottom",
-            "content_position_mb": "center_bottom",
+            "content_position": "left_center",
+            "content_position_mb": "center_top",
             "content_align": "left",
-            "content_align_mb": "left",
+            "content_align_mb": "center",
+            "show_sale_label": true,
+            "sale_label": "Hot Selling",
+            "sale_label_color": "#ffffff",
+            "sale_label_color_mb": "#ffffff",
+            "sale_label_bg": "#e56321",
+            "sale_label_bg_mb": "#e56321",
             "slide_sub_title": "",
-            "slide_title": "",
+            "slide_title": "Dog House",
             "slide_title_type": "p",
-            "slide_info": "",
-            "text_color": "#fafafa",
-            "text_color_mb": "#141414",
+            "slide_info": "All-weather resin | Cool in summer, warm in winter. Your dog deserves the best",
+            "text_color": "#ffffff",
+            "text_color_mb": "#000000",
             "slide_button_switch": true,
-            "slide_button_text": "",
-            "slide_button_url": "",
-            "slide_button_color": "#141414",
-            "slide_button_bg": "#fed100"
+            "slide_button_text": "Shop Now",
+            "slide_button_url": "https://www.google.com",
+            "slide_button_color": "#355da2",
+            "slide_button_bg": "#ffffff",
+            "slide_button_color_mb": "#ffffff",
+            "slide_button_bg_mb": "#000000"
           }
         },
         "slide_Ehibpz": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "slide_image": "shopify://shop_images/hero-banner-004.jpg",
             "slide_image_mb": "shopify://shop_images/hero-banner-mb004.jpg",
             "desktop_shadow": true,
-            "content_area_width": 530,
+            "content_area_width": 460,
             "content_area_width_mb": 375,
-            "content_position": "left_bottom",
-            "content_position_mb": "center_bottom",
+            "content_position": "left_center",
+            "content_position_mb": "center_top",
             "content_align": "left",
-            "content_align_mb": "left",
+            "content_align_mb": "center",
+            "show_sale_label": true,
+            "sale_label": "Hot Selling",
+            "sale_label_color": "#ffffff",
+            "sale_label_color_mb": "#ffffff",
+            "sale_label_bg": "#e56321",
+            "sale_label_bg_mb": "#e56321",
             "slide_sub_title": "",
-            "slide_title": "",
+            "slide_title": "Dog House",
             "slide_title_type": "p",
-            "slide_info": "",
-            "text_color": "#fafafa",
-            "text_color_mb": "#141414",
+            "slide_info": "All-weather resin | Cool in summer, warm in winter. Your dog deserves the best",
+            "text_color": "#ffffff",
+            "text_color_mb": "#000000",
             "slide_button_switch": true,
-            "slide_button_text": "",
-            "slide_button_url": "",
-            "slide_button_color": "#141414",
-            "slide_button_bg": "#fed100"
+            "slide_button_text": "Shop Now",
+            "slide_button_url": "https://www.google.com",
+            "slide_button_color": "#355da2",
+            "slide_button_bg": "#ffffff",
+            "slide_button_color_mb": "#ffffff",
+            "slide_button_bg_mb": "#000000"
           }
         }
       },
@@ -127,11 +155,209 @@
       "settings": {
         "carousel_effect": "slide",
         "autoplay": false,
-        "cycle_speed": 5
+        "cycle_speed": 5,
+        "show_arrows": true,
+        "show_pagination": true,
+        "custom_class": ""
+      }
+    },
+    "cm_service_icon_yP6ht6": {
+      "type": "cm-service-icon",
+      "blocks": {
+        "item_6mVyP7": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify://shop_images/icon-001.png",
+            "icon_text": "Secure Payment"
+          }
+        },
+        "item_DeNrwy": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify://shop_images/icon-002.png",
+            "icon_text": "30-Day Return"
+          }
+        },
+        "item_f4qXyC": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify://shop_images/icon-003.png",
+            "icon_text": "Free Delivery"
+          }
+        },
+        "item_dRrLEz": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify://shop_images/icon-004.png",
+            "icon_text": "Trusted by 100M+ Families"
+          }
+        }
+      },
+      "block_order": [
+        "item_6mVyP7",
+        "item_DeNrwy",
+        "item_f4qXyC",
+        "item_dRrLEz"
+      ],
+      "name": "服务图标",
+      "settings": {
+        "text_color": "#000000",
+        "bg_color": "#ffffff",
+        "bg_color_mb": "#fcf9f1",
+        "remove_top_padding": true,
+        "remove_bottom_padding": true,
+        "custom_class": ""
+      }
+    },
+    "cm_collection_grid_877HTN": {
+      "type": "cm-collection-grid",
+      "blocks": {
+        "collection_be7Cg6": {
+          "type": "collection",
+          "settings": {
+            "collection": "automated-collection",
+            "collection_image": "shopify://shop_images/collection-001.jpg",
+            "collection_image_mb": "shopify://shop_images/collection-mb001.jpg",
+            "content_position": "right_center",
+            "content_position_mb": "center_bottom",
+            "content_align": "left",
+            "content_align_mb": "center",
+            "collection_title": "Outdoor",
+            "text_color": "#ffffff",
+            "text_color_mb": "#ffffff",
+            "collection_button_switch": true,
+            "collection_button_text": "See More >",
+            "collection_button_color": "#ffffff",
+            "collection_button_bg": "#f05a42",
+            "collection_button_color_mb": "#ffffff",
+            "collection_button_bg_mb": "#f05a42"
+          }
+        },
+        "collection_V7EFAQ": {
+          "type": "collection",
+          "settings": {
+            "collection": "automated-collection",
+            "collection_image": "shopify://shop_images/collection-002.jpg",
+            "collection_image_mb": "shopify://shop_images/collection-mb002.jpg",
+            "content_position": "right_center",
+            "content_position_mb": "center_bottom",
+            "content_align": "left",
+            "content_align_mb": "center",
+            "collection_title": "Outdoor",
+            "text_color": "#ffffff",
+            "text_color_mb": "#ffffff",
+            "collection_button_switch": true,
+            "collection_button_text": "See More >",
+            "collection_button_color": "#ffffff",
+            "collection_button_bg": "#f05a42",
+            "collection_button_color_mb": "#ffffff",
+            "collection_button_bg_mb": "#f05a42"
+          }
+        },
+        "collection_yMJKMU": {
+          "type": "collection",
+          "settings": {
+            "collection": "automated-collection",
+            "collection_image": "shopify://shop_images/collection-003.jpg",
+            "collection_image_mb": "shopify://shop_images/collection-mb003.jpg",
+            "content_position": "right_center",
+            "content_position_mb": "center_bottom",
+            "content_align": "left",
+            "content_align_mb": "center",
+            "collection_title": "Outdoor",
+            "text_color": "#ffffff",
+            "text_color_mb": "#ffffff",
+            "collection_button_switch": true,
+            "collection_button_text": "See More >",
+            "collection_button_color": "#ffffff",
+            "collection_button_bg": "#f05a42",
+            "collection_button_color_mb": "#ffffff",
+            "collection_button_bg_mb": "#f05a42"
+          }
+        },
+        "collection_LhCjyD": {
+          "type": "collection",
+          "settings": {
+            "collection": "automated-collection",
+            "collection_image": "shopify://shop_images/collection-001.jpg",
+            "collection_image_mb": "shopify://shop_images/collection-mb004.jpg",
+            "content_position": "right_center",
+            "content_position_mb": "center_top",
+            "content_align": "left",
+            "content_align_mb": "center",
+            "collection_title": "Outdoor",
+            "text_color": "#ffffff",
+            "text_color_mb": "#ffffff",
+            "collection_button_switch": true,
+            "collection_button_text": "See More >",
+            "collection_button_color": "#ffffff",
+            "collection_button_bg": "#f05a42",
+            "collection_button_color_mb": "#ffffff",
+            "collection_button_bg_mb": "#f05a42"
+          }
+        },
+        "collection_7jfzaA": {
+          "type": "collection",
+          "settings": {
+            "collection": "automated-collection",
+            "collection_image": "shopify://shop_images/collection-002.jpg",
+            "collection_image_mb": "shopify://shop_images/collection-mb005.jpg",
+            "content_position": "right_center",
+            "content_position_mb": "center_top",
+            "content_align": "left",
+            "content_align_mb": "center",
+            "collection_title": "Outdoor",
+            "text_color": "#ffffff",
+            "text_color_mb": "#ffffff",
+            "collection_button_switch": true,
+            "collection_button_text": "See More >",
+            "collection_button_color": "#ffffff",
+            "collection_button_bg": "#f05a42",
+            "collection_button_color_mb": "#ffffff",
+            "collection_button_bg_mb": "#f05a42"
+          }
+        },
+        "collection_BQMxHV": {
+          "type": "collection",
+          "settings": {
+            "collection": "automated-collection",
+            "collection_image": "shopify://shop_images/collection-003.jpg",
+            "collection_image_mb": "shopify://shop_images/collection-mb006.jpg",
+            "content_position": "right_center",
+            "content_position_mb": "center_top",
+            "content_align": "left",
+            "content_align_mb": "center",
+            "collection_title": "Outdoor",
+            "text_color": "#ffffff",
+            "text_color_mb": "#ffffff",
+            "collection_button_switch": true,
+            "collection_button_text": "See More >",
+            "collection_button_color": "#ffffff",
+            "collection_button_bg": "#f05a42",
+            "collection_button_color_mb": "#ffffff",
+            "collection_button_bg_mb": "#f05a42"
+          }
+        }
+      },
+      "block_order": [
+        "collection_be7Cg6",
+        "collection_V7EFAQ",
+        "collection_yMJKMU",
+        "collection_LhCjyD",
+        "collection_7jfzaA",
+        "collection_BQMxHV"
+      ],
+      "name": "分类系列网格",
+      "settings": {
+        "remove_top_padding": true,
+        "remove_bottom_padding": false,
+        "custom_class": ""
       }
     }
   },
   "order": [
-    "cm-slideshow_A6HdEU"
+    "cm-slideshow_A6HdEU",
+    "cm_service_icon_yP6ht6",
+    "cm_collection_grid_877HTN"
   ]
 }
