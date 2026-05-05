@@ -1,21 +1,21 @@
 
-.cm-collection-grid p {
+.cm-featured-products p {
     margin: 0;
 }
-.cm-collection-grid.remove-top-padding {
+.cm-featured-products.remove-top-padding {
     padding-top: 0 !important;
 }
-.cm-collection-grid.remove-bottom-padding {
+.cm-featured-products.remove-bottom-padding {
     padding-bottom: 0 !important;
 }
 
-.cm-collection-grid {
+.cm-featured-products {
     padding-top: 24px;
     padding-bottom: 24px;
     background-color: var(--bg-color-mb);
 }
 
-.cm-collection-grid .swiper-box {
+.cm-featured-products .swiper-box {
     position: relative;
     border-radius: 0;
     overflow: hidden;
@@ -24,19 +24,19 @@
     margin-left: -24px;
 }
 
-.cm-collection-grid .main-swiper {
+.cm-featured-products .main-swiper {
     overflow: hidden;
     padding-right: 24px;
     padding-left: 24px;
 }
 
 /* 桌面：Swiper 已销毁，由 JS 添加 cm-desktop-grid，纯 Grid 四列 */
-.cm-collection-grid .main-swiper.cm-desktop-grid {
+.cm-featured-products .main-swiper.cm-desktop-grid {
     overflow: visible;
     opacity: 1;
 }
 
-.cm-collection-grid .main-swiper.cm-desktop-grid .swiper-wrapper {
+.cm-featured-products .main-swiper.cm-desktop-grid .swiper-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
@@ -45,20 +45,20 @@
     box-sizing: border-box;
 }
 
-.cm-collection-grid .main-swiper.cm-desktop-grid .swiper-slide {
+.cm-featured-products .main-swiper.cm-desktop-grid .swiper-slide {
     width: auto !important;
     max-width: none !important;
     margin: 0 !important;
 }
 
-.cm-collection-grid .swiper-slide {
+.cm-featured-products .swiper-slide {
     position: relative;
     height: auto;
     box-sizing: border-box;
 }
 
 @media (min-width:990px) {
-    .cm-collection-grid {
+    .cm-featured-products {
         background-color: var(--bg-color);
     }
 }
