@@ -74,6 +74,12 @@
     margin-bottom:8px;
 }
 
+.cm-featured-products .section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 @media (min-width:990px) {
     .cm-featured-products {
         background-color: var(--bg-color);
