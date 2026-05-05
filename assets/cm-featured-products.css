@@ -10,7 +10,7 @@
 }
 
 .cm-featured-products .price__regular .price-item--regular,
-.cm-featured-products .price .price-item {
+.cm-featured-products .price .price-item--sale {
     margin-right: 0;
     font-weight: 400;
     color: #df6816;
