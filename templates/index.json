@@ -391,8 +391,8 @@
         "item_qW8cea": {
           "type": "item",
           "settings": {
-            "item_image": "shopify://shop_images/image-card-pc001.png",
-            "item_image_mb": "shopify://shop_images/image-card-001.png",
+            "item_image": "shopify://shop_images/image-card-pc002.png",
+            "item_image_mb": "shopify://shop_images/image-card-002.png",
             "content_position": false,
             "content_position_mb": true,
             "item_title": "Facebook Community",
@@ -405,8 +405,8 @@
         "item_QCBFEn": {
           "type": "item",
           "settings": {
-            "item_image": "shopify://shop_images/image-card-pc001.png",
-            "item_image_mb": "shopify://shop_images/image-card-001.png",
+            "item_image": "shopify://shop_images/image-card-pc003.png",
+            "item_image_mb": "shopify://shop_images/image-card-003.png",
             "content_position": true,
             "content_position_mb": true,
             "item_title": "Facebook Community",
@@ -419,8 +419,8 @@
         "item_HUWPFU": {
           "type": "item",
           "settings": {
-            "item_image": "shopify://shop_images/image-card-pc001.png",
-            "item_image_mb": "shopify://shop_images/image-card-001.png",
+            "item_image": "shopify://shop_images/image-card-pc004.png",
+            "item_image_mb": "shopify://shop_images/image-card-004.png",
             "content_position": false,
             "content_position_mb": true,
             "item_title": "Facebook Community",
