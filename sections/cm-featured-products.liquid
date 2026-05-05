@@ -96,7 +96,7 @@
         const oSection = document.querySelector('[data-section-id="{{ section.id }}"]');
 
         {% comment %}
-          手机：Swiper 横向约 1.3 张；电脑：销毁 Swiper，用 CSS Grid 三列铺开（任意数量自动换行，无轮播）。
+          手机：Swiper 横向约 2.05 张；电脑：销毁 Swiper，用 CSS Grid 四列铺开（任意数量自动换行，无轮播）。
         {% endcomment %}
         let cmCollectionGridSwiper = null;
         const CM_CG_DESKTOP = window.matchMedia('(min-width: 990px)');
@@ -127,7 +127,7 @@
                 observeParents: true,
                 speed: 400,
                 spaceBetween: 16,
-                slidesPerView: 1.3,
+                slidesPerView: 2.05,
                 slidesPerGroup: 1,
             });
         }
