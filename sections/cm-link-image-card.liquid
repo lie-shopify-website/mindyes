@@ -50,8 +50,8 @@
         --bg-color-mb: {{ section.settings.bg_color_mb }};
     }
 </style>
-{{ 'cm-featured-products.css' | asset_url | stylesheet_tag }}
-<div class="cm-featured-products {% if section.settings.remove_top_padding %}remove-top-padding{% endif %} {% if section.settings.remove_bottom_padding %}remove-bottom-padding{% endif %} {{ section.settings.custom_class }}" data-section-id="{{ section.id }}">
+{{ 'cm-link-image-card.css' | asset_url | stylesheet_tag }}
+<div class="cm-link-image-card {% if section.settings.remove_top_padding %}remove-top-padding{% endif %} {% if section.settings.remove_bottom_padding %}remove-bottom-padding{% endif %} {{ section.settings.custom_class }}" data-section-id="{{ section.id }}">
     <div class="layout-container page-width">
         {% if section.settings.section_title != blank %}
             <div class="section-heading">
@@ -102,7 +102,7 @@
         const oSection = document.querySelector('[data-section-id="{{ section.id }}"]');
 
         {% comment %}
-          手机：Swiper 横向约 2.05 张；电脑：销毁 Swiper，用 CSS Grid 四列铺开（任意数量自动换行，无轮播）。
+          手机：Swiper 横向约 1.4 张；电脑：销毁 Swiper，用 CSS Grid 四列铺开（任意数量自动换行，无轮播）。
         {% endcomment %}
         let cmCollectionGridSwiper = null;
         const CM_CG_DESKTOP = window.matchMedia('(min-width: 990px)');

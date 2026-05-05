@@ -1,0 +1,87 @@
+.cm-featured-products .card-save-label { display:none !important; }
+.cm-featured-products p {
+    margin: 0;
+}
+.cm-featured-products.remove-top-padding {
+    padding-top: 0 !important;
+}
+.cm-featured-products.remove-bottom-padding {
+    padding-bottom: 0 !important;
+}
+
+.cm-featured-products .price__regular .price-item--regular,
+.cm-featured-products .price .price-item--sale {
+    margin-right: 0;
+    font-weight: 400;
+    color: #df6816;
+}
+
+.cm-featured-products {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: var(--bg-color-mb);
+}
+
+.cm-featured-products .swiper-box {
+    position: relative;
+    border-radius: 0;
+    overflow: hidden;
+    transform: translateZ(0);
+    margin-right: -24px;
+    margin-left: -24px;
+}
+
+.cm-featured-products .main-swiper {
+    overflow: hidden;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+/* 桌面：Swiper 已销毁，由 JS 添加 cm-desktop-grid，纯 Grid 四列 */
+.cm-featured-products .main-swiper.cm-desktop-grid {
+    overflow: visible;
+    opacity: 1;
+}
+
+.cm-featured-products .main-swiper.cm-desktop-grid .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    transform: none !important;
+    width: 100% !important;
+    box-sizing: border-box;
+}
+
+.cm-featured-products .main-swiper.cm-desktop-grid .swiper-slide {
+    width: auto !important;
+    max-width: none !important;
+    margin: 0 !important;
+}
+
+.cm-featured-products .swiper-slide {
+    position: relative;
+    height: auto;
+    box-sizing: border-box;
+}
+
+
+.cm-featured-products .product-title a {
+    line-height: 1.2;
+    display: block;
+    font-size: 14px;
+}
+.cm-featured-products .product-title {
+    margin-bottom:8px;
+}
+
+.cm-featured-products .section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (min-width:990px) {
+    .cm-featured-products {
+        background-color: var(--bg-color);
+    }
+}
