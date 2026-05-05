@@ -364,6 +364,82 @@
         "section_see_more": "See More",
         "collection": "automated-collection",
         "limit_products": 8,
+        "bg_color": "rgba(0,0,0,0)",
+        "bg_color_mb": "rgba(0,0,0,0)",
+        "remove_top_padding": false,
+        "remove_bottom_padding": false,
+        "custom_class": ""
+      }
+    },
+    "cm_link_image_card_c3mmcm": {
+      "type": "cm-link-image-card",
+      "blocks": {
+        "item_rwppDr": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify://shop_images/image-card-pc001.png",
+            "item_image_mb": "shopify://shop_images/image-card-001.png",
+            "content_position": true,
+            "content_position_mb": true,
+            "item_title": "Facebook Community",
+            "item_desc": "Join the Group for Exclusive Discounts.",
+            "text_color": "#ffffff",
+            "text_color_mb": "#000000",
+            "item_link": "shopify://collections"
+          }
+        },
+        "item_qW8cea": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify://shop_images/image-card-pc001.png",
+            "item_image_mb": "shopify://shop_images/image-card-001.png",
+            "content_position": false,
+            "content_position_mb": true,
+            "item_title": "Facebook Community",
+            "item_desc": "Join the Group for Exclusive Discounts.",
+            "text_color": "#ffffff",
+            "text_color_mb": "#000000",
+            "item_link": "shopify://collections"
+          }
+        },
+        "item_QCBFEn": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify://shop_images/image-card-pc001.png",
+            "item_image_mb": "shopify://shop_images/image-card-001.png",
+            "content_position": true,
+            "content_position_mb": true,
+            "item_title": "Facebook Community",
+            "item_desc": "Join the Group for Exclusive Discounts.",
+            "text_color": "#ffffff",
+            "text_color_mb": "#000000",
+            "item_link": "shopify://collections"
+          }
+        },
+        "item_HUWPFU": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify://shop_images/image-card-pc001.png",
+            "item_image_mb": "shopify://shop_images/image-card-001.png",
+            "content_position": false,
+            "content_position_mb": true,
+            "item_title": "Facebook Community",
+            "item_desc": "Join the Group for Exclusive Discounts.",
+            "text_color": "#ffffff",
+            "text_color_mb": "#000000",
+            "item_link": "shopify://collections"
+          }
+        }
+      },
+      "block_order": [
+        "item_rwppDr",
+        "item_qW8cea",
+        "item_QCBFEn",
+        "item_HUWPFU"
+      ],
+      "name": "链接图文卡片",
+      "settings": {
+        "section_title": "What’s up with Costway!",
         "bg_color": "transparent",
         "bg_color_mb": "transparent",
         "remove_top_padding": false,
@@ -376,6 +452,7 @@
     "cm-slideshow_A6HdEU",
     "cm_service_icon_yP6ht6",
     "cm_collection_grid_877HTN",
-    "cm_featured_products_YNJaEQ"
+    "cm_featured_products_YNJaEQ",
+    "cm_link_image_card_c3mmcm"
   ]
 }
