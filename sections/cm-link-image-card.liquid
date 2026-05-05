@@ -10,6 +10,31 @@
     { "type": "checkbox", "id": "remove_bottom_padding", "label": "移除下边距", "default": false },
     { "type": "text", "id": "custom_class", "label": "自定义类名" }
   ],
+  "blocks": [
+    {
+        "type": "item",
+        "name": "item",
+        "settings": [
+            { "type": "header","content":"图片"},
+            { "type": "image_picker", "id": "item_image", "label": "图片" },
+            { "type": "image_picker", "id": "item_image_mb", "label": "图片 (手机端)" },
+
+            { "type": "header","content":"内容"},
+            { "type": "checkbox", "id": "content_position", "label": "内容在下面", "default": true, "info":"默认在下面, 取消则把内容放到上面"},
+            { "type": "checkbox", "id": "content_position_mb", "label": "内容在下面 (手机端)", "default": true, "info":"默认在下面, 取消则把内容放到上面"},
+
+            
+            { "type": "textarea", "id": "collection_title", "label": "系列标题", "info":"若不填写，则使用系列本身标题" },
+
+            { "type": "header","content":"颜色"},
+            { "type": "color", "id": "text_color", "label": "文字颜色", "default": "#ffffff", },
+            { "type": "color", "id": "text_color_mb", "label": "文字颜色 (手机端)", "default": "#000000" },
+
+            { "type": "header","content":"链接"},
+            { "type": "url", "id": "item_link", "label": "链接" }
+        ]
+    }
+  ],
   "presets": [
     {
       "category": "定制模块",
