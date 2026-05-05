@@ -12,6 +12,7 @@
 .cm-collection-grid {
     padding-top: 24px;
     padding-bottom: 24px;
+    background-color: var(--bg-color-mb);
 }
 
 .cm-collection-grid .swiper-box {
@@ -213,6 +214,9 @@
 }
 
 @media (min-width:990px) {
+    .cm-collection-grid {
+        background-color: var(--bg-color);
+    }
 
     .cm-collection-grid .collection-block-item {
         text-align: var(--content-align);
