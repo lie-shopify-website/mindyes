@@ -1,0 +1,155 @@
+{% schema %}
+{
+  "name": "热卖产品网格",
+  "settings": [
+    { "type": "textarea", "id": "section_title", "label": "版块标题", "default":"Shop Top Sellers"},
+    { "type": "textarea", "id": "section_see_more", "label": "查看更多", "default":"See More"},
+    { "type": "collection", "id": "collection", "label": "系列", "info": "模块会按系列里的产品，显示出来" },
+    { "type": "range", "id": "limit_products", "label": "最大数量", "min": 1, "max": 20, "step": 1, "unit": "个", "default": 8},
+    { "type": "header","content":"颜色"},
+    { "type": "color", "id": "bg_color", "label": "背景颜色", "default": "transparent" },
+    { "type": "color", "id": "bg_color_mb", "label": "背景颜色 (手机端)", "default": "transparent" },
+    { "type": "checkbox", "id": "remove_top_padding", "label": "移除上边距", "default": false },
+    { "type": "checkbox", "id": "remove_bottom_padding", "label": "移除下边距", "default": false },
+    { "type": "text", "id": "custom_class", "label": "自定义类名" }
+  ],
+  "presets": [
+    {
+      "category": "定制模块",
+      "name": "热卖产品网格"
+    }
+  ]
+}
+{% endschema %}
+
+
+
+<style>
+    [data-section-id="{{ section.id }}"] {
+        --bg-color: {{ section.settings.bg_color }}; 
+        --bg-color-mb: {{ section.settings.bg_color_mb }};
+    }
+</style>
+{{ 'cm-featured-products.css' | asset_url | stylesheet_tag }}
+<div class="cm-featured-products {% if section.settings.remove_top_padding %}remove-top-padding{% endif %} {% if section.settings.remove_bottom_padding %}remove-bottom-padding{% endif %} {{ section.settings.custom_class }}" data-section-id="{{ section.id }}">
+    <div class="layout-container page-width">
+        <div class="swiper-box">
+            <div class="swiper main-swiper js-mainSwiper">
+                <div class="swiper-wrapper">
+                    {% for block in section.blocks %}
+                        <div class="swiper-slide">
+                            <div class="slide-image">
+                                
+                                
+                                {% comment %} 图片 {% endcomment %}
+                                {% liquid
+                                    assign pc_src = block.settings.collection_image | image_url: width: block.settings.collection_image.width
+                                    assign pad_src = block.settings.collection_image | image_url: width: block.settings.collection_image.width
+                                    assign m_src = block.settings.collection_image_mb | image_url: width: block.settings.collection_image_mb.width
+                                    assign collection_title = block.settings.collection_title | default: block.settings.collection.title
+                                %}
+                                
+                                {% render 'resp-img'
+                                    pc_src: pc_src,
+                                    pad_src: pad_src,
+                                    m_src: m_src,
+                                    class_name: 'resp-img-class',
+                                    alt: collection_title
+                                %}
+                            </div>
+
+                            <div class="content" data-block-id="{{ section.id }}-{{ block.id }}">
+                                <div class="content-inner" data-content-position="{{ block.settings.content_position }}" data-content-position-mb="{{ block.settings.content_position_mb }}">
+                                    <div class="content-container">
+                                    {% if collection_title != blank %} <div class="collection_title collection-block-item"><div class="collection_title-inner">{{ collection_title }}</div></div> {% endif %}
+
+                                    {% if block.settings.collection_button_switch and block.settings.collection_button_text != blank %}
+                                        <div class="collection_link collection-block-item">
+                                            <a href="{{ block.settings.collection.url }}" class="mf-btn">{{ block.settings.collection_button_text }}</a>
+                                        </div>
+                                    {% endif %}
+                                    </div>
+                                </div>
+                                <style>
+                                    [data-block-id="{{ section.id }}-{{ block.id }}"] {
+                                        --text-color-mb:{{ block.settings.text_color_mb }};
+                                        --text-color:{{ block.settings.text_color }};
+                                        --content-align:{{ block.settings.content_align }};
+                                        --content-align-mb:{{ block.settings.content_align_mb }};
+                                        --collection-button-color:{{ block.settings.collection_button_color }};
+                                        --collection-button-bg:{{ block.settings.collection_button_bg }};
+                                        --collection-button-color-mb:{{ block.settings.collection_button_color_mb }};
+                                        --collection-button-bg-mb:{{ block.settings.collection_button_bg_mb }};
+                                    }
+                                </style>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    ;(function() {
+        const oSection = document.querySelector('[data-section-id="{{ section.id }}"]');
+
+        {% comment %}
+          手机：Swiper 横向约 1.3 张；电脑：销毁 Swiper，用 CSS Grid 三列铺开（任意数量自动换行，无轮播）。
+        {% endcomment %}
+        let cmCollectionGridSwiper = null;
+        const CM_CG_DESKTOP = window.matchMedia('(min-width: 990px)');
+
+        function syncCmCollectionGridCarousel() {
+            if (!oSection) return;
+            const el = oSection.querySelector('.main-swiper');
+            if (!el || el.querySelectorAll('.swiper-slide').length === 0) return;
+
+            if (CM_CG_DESKTOP.matches) {
+                if (cmCollectionGridSwiper) {
+                    cmCollectionGridSwiper.destroy(true, true);
+                    cmCollectionGridSwiper = null;
+                }
+                el.classList.add('cm-desktop-grid');
+                return;
+            }
+
+            el.classList.remove('cm-desktop-grid');
+            if (cmCollectionGridSwiper) {
+                cmCollectionGridSwiper.update();
+                return;
+            }
+
+            cmCollectionGridSwiper = new Swiper(el, {
+                watchOverflow: true,
+                observer: true,
+                observeParents: true,
+                speed: 400,
+                spaceBetween: 16,
+                slidesPerView: 1.3,
+                slidesPerGroup: 1,
+            });
+        }
+
+        let cmCollectionGridResizeTimer;
+        function onCmCollectionGridResize() {
+            clearTimeout(cmCollectionGridResizeTimer);
+            cmCollectionGridResizeTimer = setTimeout(syncCmCollectionGridCarousel, 120);
+        }
+
+        if (typeof CM_CG_DESKTOP.addEventListener === 'function') {
+            CM_CG_DESKTOP.addEventListener('change', syncCmCollectionGridCarousel);
+        } else if (typeof CM_CG_DESKTOP.addListener === 'function') {
+            CM_CG_DESKTOP.addListener(syncCmCollectionGridCarousel);
+        }
+        window.addEventListener('resize', onCmCollectionGridResize);
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', syncCmCollectionGridCarousel);
+        } else {
+            syncCmCollectionGridCarousel();
+        }
+
+    })();
+</script>
