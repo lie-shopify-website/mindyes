@@ -23,8 +23,8 @@
             { "type": "checkbox", "id": "content_position", "label": "内容在下面", "default": true, "info":"默认在下面, 取消则把内容放到上面"},
             { "type": "checkbox", "id": "content_position_mb", "label": "内容在下面 (手机端)", "default": true, "info":"默认在下面, 取消则把内容放到上面"},
 
-            
-            { "type": "textarea", "id": "collection_title", "label": "系列标题", "info":"若不填写，则使用系列本身标题" },
+            { "type": "textarea", "id": "item_title", "label": "标题" },
+            { "type": "textarea", "id": "item_desc", "label": "描述" },
 
             { "type": "header","content":"颜色"},
             { "type": "color", "id": "text_color", "label": "文字颜色", "default": "#ffffff", },
@@ -44,15 +44,6 @@
 }
 {% endschema %}
 
-{% liquid
-  assign image_width = 800
-  assign flag = true
-  assign curr_collection = section.settings.collection
-  if curr_collection.size < 1
-    assign flag = false
-  endif
-%}
-
 <style>
     [data-section-id="{{ section.id }}"] {
         --bg-color: {{ section.settings.bg_color }}; 
@@ -65,26 +56,21 @@
         {% if section.settings.section_title != blank %}
             <div class="section-heading">
                 <h3 class="heading-title">{{ section.settings.section_title }}</h3>
-                {% if section.settings.section_see_more != blank and curr_collection != blank %}
-                    <a href="{{ curr_collection.url }}">{{ section.settings.section_see_more }} ></a>
-                {% endif %}
             </div>
         {% endif %}
 
-        {% if flag %}
+        {% if section.blocks.size > 0 %}
         <div class="swiper-box">
             <div class="swiper main-swiper js-mainSwiper">
                 <div class="swiper-wrapper">
-                    {% for curr_product in curr_collection.products limit: section.settings.limit_products %}
+                    {% for block in section.blocks %}
                         <div class="swiper-slide">
                             <div class="slide-image">
-                                
-                                
                                 {% comment %} 图片 {% endcomment %}
                                 {% liquid
-                                    assign pc_src = curr_product.featured_image | image_url: width: image_width
-                                    assign pad_src = curr_product.featured_image | image_url: width: image_width
-                                    assign m_src = curr_product.featured_image | image_url: width: image_width
+                                    assign pc_src = block.settings.item_image | image_url: width: block.settings.item_image.width
+                                    assign pad_src = block.settings.item_image | image_url: width: block.settings.item_image.width
+                                    assign m_src = block.settings.item_image_mb | image_url: width: block.settings.item_image_mb.width
                                 %}
                                 
                                 {% render 'resp-img'
@@ -92,18 +78,14 @@
                                     pad_src: pad_src,
                                     m_src: m_src,
                                     class_name: 'resp-img-class',
-                                    alt: curr_product.title
+                                    alt: block.settings.item_title
                                 %}
                             </div>
 
                             <div class="content">
                                 <div class="content-inner">
-                                    <div class="product-title">
-                                        <a href="{{ curr_product.url }}">{{ curr_product.title }}</a>
-                                    </div>
-                                    <div class="product-price">
-                                        {% render 'price', product: curr_product, price_class: '', show_compare_at_price: true %}
-                                    </div>
+                                    {% if block.settings.item_title != blank %}<div class="title"> <p>{{ block.settings.item_title }}</p> </div>{% endif %}
+                                    {% if block.settings.item_title != blank %}<div class="desc"> <p>{{ block.settings.item_desc }}</p> </div>{% endif %}
                                 </div>
                             </div>
                         </div>
@@ -151,7 +133,7 @@
                 observeParents: true,
                 speed: 400,
                 spaceBetween: 16,
-                slidesPerView: 2.05,
+                slidesPerView: 1.4,
                 slidesPerGroup: 1,
                 grid: {
                     rows: 2,
