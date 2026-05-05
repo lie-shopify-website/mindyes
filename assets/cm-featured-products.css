@@ -9,6 +9,13 @@
     padding-bottom: 0 !important;
 }
 
+.cm-featured-products .price__regular .price-item--regular,
+.cm-featured-products .price .price-item {
+    margin-right: 0;
+    font-weight: 400;
+    color: #df6816;
+}
+
 .cm-featured-products {
     padding-top: 24px;
     padding-bottom: 24px;
