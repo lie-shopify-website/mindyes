@@ -64,6 +64,21 @@
 		padding-bottom:{{ section.settings.mb_padding_bottom }}px;
     }
 }
+
+[data-section-id="{{ section.id }}"] .review-box {
+    position: relative;
+    border-radius: 0;
+    overflow: hidden;
+    transform: translateZ(0);
+    margin-right: -24px;
+    margin-left: -24px;
+}
+[data-section-id="{{ section.id }}"] .review-box .swiper {
+    overflow: hidden;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
 [data-section-id="{{ section.id }}"] img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -175,7 +190,7 @@
         }
       
         var swiper = new Swiper('[data-section-id="{{ section.id }}"] .swiper', {
-            spaceBetween: 30,
+            spaceBetween: 16,
             breakpoints: {
                 320: {
                     slidesPerView: {{ section.settings.per_view_mb }},
@@ -185,6 +200,7 @@
                 },
                 1080: {
                     slidesPerView: 3,
+                    spaceBetween: 24,
                 },
                 1440: {
                     slidesPerView: {{ section.settings.per_view }},
