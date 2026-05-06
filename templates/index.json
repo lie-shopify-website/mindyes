@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "cm-slideshow_A6HdEU": {
       "type": "cm-slideshow",
@@ -371,6 +371,169 @@
         "custom_class": ""
       }
     },
+    "cm_multicolumn_list_niCVH3": {
+      "type": "cm-multicolumn-list",
+      "blocks": {
+        "column_RbePK8": {
+          "type": "column",
+          "settings": {
+            "column_image": "shopify://shop_images/category-001.png",
+            "column_image_mb": "shopify://shop_images/category-001.png",
+            "column_title": "New & Trending",
+            "column_info": "",
+            "column_url": "shopify://collections"
+          }
+        },
+        "column_nGmxQf": {
+          "type": "column",
+          "settings": {
+            "column_image": "shopify://shop_images/category-001.png",
+            "column_image_mb": "shopify://shop_images/category-001.png",
+            "column_title": "New & Trending",
+            "column_info": "",
+            "column_url": "shopify://collections"
+          }
+        },
+        "column_xgcwxc": {
+          "type": "column",
+          "settings": {
+            "column_image": "shopify://shop_images/category-001.png",
+            "column_image_mb": "shopify://shop_images/category-001.png",
+            "column_title": "New & Trending",
+            "column_info": "",
+            "column_url": "shopify://collections"
+          }
+        },
+        "column_pBE9dh": {
+          "type": "column",
+          "settings": {
+            "column_image": "shopify://shop_images/category-001.png",
+            "column_image_mb": "shopify://shop_images/category-001.png",
+            "column_title": "New & Trending",
+            "column_info": "",
+            "column_url": "shopify://collections"
+          }
+        },
+        "column_UJrkbN": {
+          "type": "column",
+          "settings": {
+            "column_image": "shopify://shop_images/category-001.png",
+            "column_image_mb": "shopify://shop_images/category-001.png",
+            "column_title": "New & Trending",
+            "column_info": "",
+            "column_url": "shopify://collections"
+          }
+        },
+        "column_BjdHaJ": {
+          "type": "column",
+          "settings": {
+            "column_image": "shopify://shop_images/category-001.png",
+            "column_image_mb": "shopify://shop_images/category-001.png",
+            "column_title": "New & Trending",
+            "column_info": "",
+            "column_url": "shopify://collections"
+          }
+        },
+        "column_Rh9D8k": {
+          "type": "column",
+          "settings": {
+            "column_image": "shopify://shop_images/category-001.png",
+            "column_image_mb": "shopify://shop_images/category-001.png",
+            "column_title": "New & Trending",
+            "column_info": "",
+            "column_url": "shopify://collections"
+          }
+        },
+        "column_C4KkJw": {
+          "type": "column",
+          "settings": {
+            "column_image": "shopify://shop_images/category-001.png",
+            "column_image_mb": "shopify://shop_images/category-001.png",
+            "column_title": "New & Trending",
+            "column_info": "",
+            "column_url": "shopify://collections"
+          }
+        },
+        "column_W6qnCh": {
+          "type": "column",
+          "settings": {
+            "column_image": "shopify://shop_images/category-001.png",
+            "column_image_mb": "shopify://shop_images/category-001.png",
+            "column_title": "New & Trending",
+            "column_info": "",
+            "column_url": "shopify://collections"
+          }
+        },
+        "column_BNPBPg": {
+          "type": "column",
+          "settings": {
+            "column_image": "shopify://shop_images/category-001.png",
+            "column_image_mb": "shopify://shop_images/category-001.png",
+            "column_title": "New & Trending",
+            "column_info": "",
+            "column_url": "shopify://collections"
+          }
+        },
+        "column_zgde8P": {
+          "type": "column",
+          "settings": {
+            "column_image": "shopify://shop_images/category-001.png",
+            "column_image_mb": "shopify://shop_images/category-001.png",
+            "column_title": "New & Trending",
+            "column_info": "",
+            "column_url": "shopify://collections"
+          }
+        },
+        "column_FaYfcG": {
+          "type": "column",
+          "settings": {
+            "column_image": "shopify://shop_images/category-001.png",
+            "column_image_mb": "shopify://shop_images/category-001.png",
+            "column_title": "New & Trending",
+            "column_info": "",
+            "column_url": "shopify://collections"
+          }
+        }
+      },
+      "block_order": [
+        "column_RbePK8",
+        "column_nGmxQf",
+        "column_xgcwxc",
+        "column_pBE9dh",
+        "column_UJrkbN",
+        "column_BjdHaJ",
+        "column_Rh9D8k",
+        "column_C4KkJw",
+        "column_W6qnCh",
+        "column_BNPBPg",
+        "column_zgde8P",
+        "column_FaYfcG"
+      ],
+      "name": "多列列表",
+      "settings": {
+        "column_count": 6,
+        "column_layout_type": "grid",
+        "column_count_mb": "4",
+        "bg_color": "rgba(0,0,0,0)",
+        "heading": "Shop by Category",
+        "subheading": "",
+        "header_alignment": "left",
+        "heading_color": "#141414",
+        "subheading_color": "#141414",
+        "title_font_size": 16,
+        "title_font_size_mb": 14,
+        "info_font_size": 14,
+        "info_font_size_mb": 12,
+        "text_color": "#141414",
+        "text_color_hover": "#f7921f",
+        "info_color": "#141414",
+        "image_border_radius": 0,
+        "image_border_radius_mb": 0,
+        "remove_top_padding": false,
+        "remove_bottom_padding": false,
+        "custom_class": ""
+      }
+    },
     "cm_link_image_card_c3mmcm": {
       "type": "cm-link-image-card",
       "blocks": {
@@ -379,8 +542,8 @@
           "settings": {
             "item_image": "shopify://shop_images/image-card-pc001.png",
             "item_image_mb": "shopify://shop_images/image-card-001.png",
-            "content_position": true,
-            "content_position_mb": true,
+            "content_position": "bottom_inside",
+            "content_position_mb": "bottom_outside",
             "item_title": "Facebook Community",
             "item_desc": "Join the Group for Exclusive Discounts.",
             "text_color": "#ffffff",
@@ -393,11 +556,11 @@
           "settings": {
             "item_image": "shopify://shop_images/image-card-pc002.png",
             "item_image_mb": "shopify://shop_images/image-card-002.png",
-            "content_position": false,
-            "content_position_mb": true,
+            "content_position": "top_outside",
+            "content_position_mb": "bottom_outside",
             "item_title": "Facebook Community",
             "item_desc": "Join the Group for Exclusive Discounts.",
-            "text_color": "#ffffff",
+            "text_color": "#000000",
             "text_color_mb": "#000000",
             "item_link": "shopify://collections"
           }
@@ -407,8 +570,8 @@
           "settings": {
             "item_image": "shopify://shop_images/image-card-pc003.png",
             "item_image_mb": "shopify://shop_images/image-card-003.png",
-            "content_position": true,
-            "content_position_mb": true,
+            "content_position": "bottom_inside",
+            "content_position_mb": "bottom_outside",
             "item_title": "Facebook Community",
             "item_desc": "Join the Group for Exclusive Discounts.",
             "text_color": "#ffffff",
@@ -421,11 +584,11 @@
           "settings": {
             "item_image": "shopify://shop_images/image-card-pc004.png",
             "item_image_mb": "shopify://shop_images/image-card-004.png",
-            "content_position": false,
-            "content_position_mb": true,
+            "content_position": "top_outside",
+            "content_position_mb": "bottom_outside",
             "item_title": "Facebook Community",
             "item_desc": "Join the Group for Exclusive Discounts.",
-            "text_color": "#ffffff",
+            "text_color": "#000000",
             "text_color_mb": "#000000",
             "item_link": "shopify://collections"
           }
@@ -440,11 +603,97 @@
       "name": "链接图文卡片",
       "settings": {
         "section_title": "What’s up with Costway!",
-        "bg_color": "transparent",
-        "bg_color_mb": "transparent",
+        "bg_color": "#fcf9f1",
+        "bg_color_mb": "#fcf9f1",
         "remove_top_padding": false,
         "remove_bottom_padding": false,
         "custom_class": ""
+      }
+    },
+    "customer_review_gallery_yG7rQ6": {
+      "type": "customer-review-gallery",
+      "blocks": {
+        "review_Hx8PW3": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/image-card-pc001.png",
+            "rating_count": 5,
+            "title": "rqre",
+            "name": "sfaasfsafas",
+            "info": "fsadfas",
+            "date": "fsafs",
+            "url": "shopify://collections"
+          }
+        },
+        "review_yQwFPM": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/image-card-pc001.png",
+            "rating_count": 5,
+            "title": "rqre",
+            "name": "sfaasfsafas",
+            "info": "fsadfas",
+            "date": "fsafs",
+            "url": "shopify://collections"
+          }
+        },
+        "review_NDBUxe": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/image-card-pc001.png",
+            "rating_count": 5,
+            "title": "rqre",
+            "name": "sfaasfsafas",
+            "info": "fsadfas",
+            "date": "fsafs",
+            "url": "shopify://collections"
+          }
+        },
+        "review_Ni4VcP": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/image-card-pc001.png",
+            "rating_count": 5,
+            "title": "rqre",
+            "name": "sfaasfsafas",
+            "info": "fsadfas",
+            "date": "fsafs",
+            "url": "shopify://collections"
+          }
+        },
+        "review_hbCbUM": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/image-card-pc001.png",
+            "rating_count": 5,
+            "title": "rqre",
+            "name": "sfaasfsafas",
+            "info": "fsadfas",
+            "date": "fsafs",
+            "url": "shopify://collections"
+          }
+        }
+      },
+      "block_order": [
+        "review_Hx8PW3",
+        "review_yQwFPM",
+        "review_NDBUxe",
+        "review_Ni4VcP",
+        "review_hbCbUM"
+      ],
+      "name": "Customer Review Gallery",
+      "settings": {
+        "background": "#ffffff",
+        "full_width": false,
+        "is_center": false,
+        "title": "",
+        "sub_title": "",
+        "per_view": 4,
+        "per_view_mb": 1.3,
+        "pc_padding_top": 32,
+        "pc_padding_bottom": 32,
+        "mb_padding_top": 24,
+        "mb_padding_bottom": 24
       }
     }
   },
@@ -453,6 +702,8 @@
     "cm_service_icon_yP6ht6",
     "cm_collection_grid_877HTN",
     "cm_featured_products_YNJaEQ",
-    "cm_link_image_card_c3mmcm"
+    "cm_multicolumn_list_niCVH3",
+    "cm_link_image_card_c3mmcm",
+    "customer_review_gallery_yG7rQ6"
   ]
 }

@@ -12,3 +12,36 @@
     window.lazySizesConfig.loadMode = 1;
 </script>
 <script src="{{ 'lazysizes-umd.min.js' | asset_url }}" async></script>
+
+<style>
+    :root {
+        --section-spacing: 32px;
+        --section-heading-margin-bottom: 24px;
+    }
+    @media (min-width: 990px) {
+        :root {
+            --section-spacing: 48px;
+            --section-heading-margin-bottom: 32px;
+        }
+    }
+    .section-spacing {
+        padding-top: var(--section-spacing);
+        padding-bottom: var(--section-spacing);
+    }
+    
+    .section-heading {
+        margin-bottom:var(--section-heading-margin-bottom);
+    }
+    .section-heading .heading-title {
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 0;
+        line-height: 1.2;
+        margin: 0;
+    }
+    @media (min-width:990px) {
+        .section-heading .heading-title {
+            font-size: 28px;
+        }
+    }
+</style>

@@ -20,8 +20,19 @@
             { "type": "image_picker", "id": "item_image_mb", "label": "图片 (手机端)" },
 
             { "type": "header","content":"内容"},
-            { "type": "checkbox", "id": "content_position", "label": "内容在下面", "default": true, "info":"默认在下面, 取消则把内容放到上面"},
-            { "type": "checkbox", "id": "content_position_mb", "label": "内容在下面 (手机端)", "default": true, "info":"默认在下面, 取消则把内容放到上面"},
+            { "type": "select", "id": "content_position", "label": "内容位置", "options": [
+                { "value": "top_inside", "label": "顶部内嵌" },
+                { "value": "top_outside", "label": "顶部外嵌" },
+                { "value": "bottom_inside", "label": "底部内嵌" },
+                { "value": "bottom_outside", "label": "底部外嵌" },
+            ], "default": "bottom_outside", "info":"内容内嵌表示内容浮在图片上面, 内容外嵌表示内容与图片平级显示"},
+
+            { "type": "select", "id": "content_position_mb", "label": "内容位置 (手机端)", "options": [
+                { "value": "top_inside", "label": "顶部内嵌" },
+                { "value": "top_outside", "label": "顶部外嵌" },
+                { "value": "bottom_inside", "label": "底部内嵌" },
+                { "value": "bottom_outside", "label": "底部外嵌" },
+            ], "default": "bottom_inside", "info":"内容内嵌表示内容浮在图片上面, 内容外嵌表示内容与图片平级显示"},
 
             { "type": "textarea", "id": "item_title", "label": "标题" },
             { "type": "textarea", "id": "item_desc", "label": "描述" },
@@ -51,7 +62,7 @@
     }
 </style>
 {{ 'cm-link-image-card.css' | asset_url | stylesheet_tag }}
-<div class="cm-link-image-card {% if section.settings.remove_top_padding %}remove-top-padding{% endif %} {% if section.settings.remove_bottom_padding %}remove-bottom-padding{% endif %} {{ section.settings.custom_class }}" data-section-id="{{ section.id }}">
+<div class="cm-link-image-card section-spacing {% if section.settings.remove_top_padding %}remove-top-padding{% endif %} {% if section.settings.remove_bottom_padding %}remove-bottom-padding{% endif %} {{ section.settings.custom_class }}" data-section-id="{{ section.id }}">
     <div class="layout-container page-width">
         {% if section.settings.section_title != blank %}
             <div class="section-heading">
@@ -64,7 +75,11 @@
             <div class="swiper main-swiper js-mainSwiper">
                 <div class="swiper-wrapper">
                     {% for block in section.blocks %}
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-content-position="{{ block.settings.content_position }}" data-content-position-mb="{{ block.settings.content_position_mb }}">
+                            {% if block.settings.item_link != blank %}
+                                <a href="{{ block.settings.item_link }}" class="slide-link" aria-label="{{ block.settings.item_title }}"></a>
+                            {% endif %}
+
                             <div class="slide-image">
                                 {% comment %} 图片 {% endcomment %}
                                 {% liquid
@@ -72,7 +87,6 @@
                                     assign pad_src = block.settings.item_image | image_url: width: block.settings.item_image.width
                                     assign m_src = block.settings.item_image_mb | image_url: width: block.settings.item_image_mb.width
                                 %}
-                                
                                 {% render 'resp-img'
                                     pc_src: pc_src,
                                     pad_src: pad_src,
@@ -82,12 +96,19 @@
                                 %}
                             </div>
 
-                            <div class="content">
+                            <div class="content" data-block-id="{{ section.id }}-{{ block.id }}">
                                 <div class="content-inner">
                                     {% if block.settings.item_title != blank %}<div class="title"> <p>{{ block.settings.item_title }}</p> </div>{% endif %}
                                     {% if block.settings.item_title != blank %}<div class="desc"> <p>{{ block.settings.item_desc }}</p> </div>{% endif %}
                                 </div>
                             </div>
+
+                            <style>
+                                [data-block-id="{{ section.id }}-{{ block.id }}"] {
+                                    --text-color: {{ block.settings.text_color }};
+                                    --text-color-mb: {{ block.settings.text_color_mb }};
+                                }
+                            </style>
                         </div>
                     {% endfor %}
                 </div>

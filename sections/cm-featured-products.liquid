@@ -38,7 +38,7 @@
     }
 </style>
 {{ 'cm-featured-products.css' | asset_url | stylesheet_tag }}
-<div class="cm-featured-products {% if section.settings.remove_top_padding %}remove-top-padding{% endif %} {% if section.settings.remove_bottom_padding %}remove-bottom-padding{% endif %} {{ section.settings.custom_class }}" data-section-id="{{ section.id }}">
+<div class="cm-featured-products section-spacing {% if section.settings.remove_top_padding %}remove-top-padding{% endif %} {% if section.settings.remove_bottom_padding %}remove-bottom-padding{% endif %} {{ section.settings.custom_class }}" data-section-id="{{ section.id }}">
     <div class="layout-container page-width">
         {% if section.settings.section_title != blank %}
             <div class="section-heading">

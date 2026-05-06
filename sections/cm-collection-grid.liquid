@@ -100,7 +100,7 @@
     }
 </style>
 {{ 'cm-collection-grid.css' | asset_url | stylesheet_tag }}
-<div class="cm-collection-grid {% if section.settings.remove_top_padding %}remove-top-padding{% endif %} {% if section.settings.remove_bottom_padding %}remove-bottom-padding{% endif %} {{ section.settings.custom_class }}" data-section-id="{{ section.id }}">
+<div class="cm-collection-grid section-spacing {% if section.settings.remove_top_padding %}remove-top-padding{% endif %} {% if section.settings.remove_bottom_padding %}remove-bottom-padding{% endif %} {{ section.settings.custom_class }}" data-section-id="{{ section.id }}">
     <div class="layout-container page-width">
         <div class="swiper-box">
             <div class="swiper main-swiper js-mainSwiper">
