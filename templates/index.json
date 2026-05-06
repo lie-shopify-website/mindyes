@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "cm-slideshow_A6HdEU": {
       "type": "cm-slideshow",
@@ -63,10 +63,10 @@
             "sale_label_color_mb": "#ffffff",
             "sale_label_bg": "#e56321",
             "sale_label_bg_mb": "#e56321",
-            "slide_sub_title": "",
-            "slide_title": "Dog House",
+            "slide_sub_title": "Showcase Your Greenery",
+            "slide_title": "Plant Stand",
             "slide_title_type": "p",
-            "slide_info": "All-weather resin | Cool in summer, warm in winter. Your dog deserves the best",
+            "slide_info": "Resin - rustproof & weatherproof | Multi-tier design | Indoor/outdoor use",
             "text_color": "#ffffff",
             "text_color_mb": "#000000",
             "slide_button_switch": true,
