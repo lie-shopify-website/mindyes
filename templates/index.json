@@ -125,7 +125,7 @@
             "content_align_mb": "center",
             "show_sale_label": true,
             "sale_label": "Hot Selling",
-            "sale_label_color": "#ffffff",
+            "sale_label_color": "#000000",
             "sale_label_color_mb": "#ffffff",
             "sale_label_bg": "#e56321",
             "sale_label_bg_mb": "#e56321",
