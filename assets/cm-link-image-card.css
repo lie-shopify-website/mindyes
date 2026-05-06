@@ -48,39 +48,42 @@
 
 /* 布局 */
 
-.cm-link-image-card .swiper-slide[data-content-position-mb="bottom_inside"] .content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 12px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    background: linear-gradient(0deg, #322413 -16.85%, rgba(60, 45, 28, 0) 100%);
-}
-.cm-link-image-card .swiper-slide[data-content-position-mb="top_inside"] .content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 12px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    background: linear-gradient(180deg, #322413 -16.85%, rgba(60, 45, 28, 0) 100%);
-}
-.cm-link-image-card .swiper-slide[data-content-position-mb="top_outside"] {
-    flex-direction: column-reverse !important;
+@media (max-width: 989px) {
+    .cm-link-image-card .swiper-slide[data-content-position-mb="bottom_inside"] .content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 12px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        background: linear-gradient(0deg, #322413 -16.85%, rgba(60, 45, 28, 0) 100%);
+    }
+    .cm-link-image-card .swiper-slide[data-content-position-mb="top_inside"] .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 12px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        background: linear-gradient(180deg, #322413 -16.85%, rgba(60, 45, 28, 0) 100%);
+    }
+    .cm-link-image-card .swiper-slide[data-content-position-mb="top_outside"] {
+        flex-direction: column-reverse !important;
+    }
+
+    .cm-link-image-card .swiper-slide[data-content-position-mb="top_outside"] .content {
+        padding: 0;
+        padding-bottom: 12px;
+    }
+
+    .cm-link-image-card .swiper-slide[data-content-position-mb="bottom_outside"] .content {
+        padding: 0;
+        padding-top: 12px;
+    }
 }
 
-.cm-link-image-card .swiper-slide[data-content-position-mb="top_outside"] .content {
-    padding: 0;
-    padding-bottom: 12px;
-}
-
-.cm-link-image-card .swiper-slide[data-content-position-mb="bottom_outside"] .content {
-    padding: 0;
-    padding-top: 12px;
-}
 
 
 .cm-link-image-card .main-swiper.cm-desktop-grid .swiper-wrapper {
