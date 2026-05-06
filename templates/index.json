@@ -243,7 +243,7 @@
             "content_position_mb": "center_bottom",
             "content_align": "left",
             "content_align_mb": "center",
-            "collection_title": "Outdoor",
+            "collection_title": "Furniture",
             "text_color": "#ffffff",
             "text_color_mb": "#ffffff",
             "collection_button_switch": true,
@@ -264,70 +264,7 @@
             "content_position_mb": "center_bottom",
             "content_align": "left",
             "content_align_mb": "center",
-            "collection_title": "Outdoor",
-            "text_color": "#ffffff",
-            "text_color_mb": "#ffffff",
-            "collection_button_switch": true,
-            "collection_button_text": "See More >",
-            "collection_button_color": "#ffffff",
-            "collection_button_bg": "#f05a42",
-            "collection_button_color_mb": "#ffffff",
-            "collection_button_bg_mb": "#f05a42"
-          }
-        },
-        "collection_LhCjyD": {
-          "type": "collection",
-          "settings": {
-            "collection": "automated-collection",
-            "collection_image": "shopify://shop_images/collection-001.jpg",
-            "collection_image_mb": "shopify://shop_images/collection-mb004.jpg",
-            "content_position": "right_center",
-            "content_position_mb": "center_top",
-            "content_align": "left",
-            "content_align_mb": "center",
-            "collection_title": "Outdoor",
-            "text_color": "#ffffff",
-            "text_color_mb": "#ffffff",
-            "collection_button_switch": true,
-            "collection_button_text": "See More >",
-            "collection_button_color": "#ffffff",
-            "collection_button_bg": "#f05a42",
-            "collection_button_color_mb": "#ffffff",
-            "collection_button_bg_mb": "#f05a42"
-          }
-        },
-        "collection_7jfzaA": {
-          "type": "collection",
-          "settings": {
-            "collection": "automated-collection",
-            "collection_image": "shopify://shop_images/collection-002.jpg",
-            "collection_image_mb": "shopify://shop_images/collection-mb005.jpg",
-            "content_position": "right_center",
-            "content_position_mb": "center_top",
-            "content_align": "left",
-            "content_align_mb": "center",
-            "collection_title": "Outdoor",
-            "text_color": "#ffffff",
-            "text_color_mb": "#ffffff",
-            "collection_button_switch": true,
-            "collection_button_text": "See More >",
-            "collection_button_color": "#ffffff",
-            "collection_button_bg": "#f05a42",
-            "collection_button_color_mb": "#ffffff",
-            "collection_button_bg_mb": "#f05a42"
-          }
-        },
-        "collection_BQMxHV": {
-          "type": "collection",
-          "settings": {
-            "collection": "automated-collection",
-            "collection_image": "shopify://shop_images/collection-003.jpg",
-            "collection_image_mb": "shopify://shop_images/collection-mb006.jpg",
-            "content_position": "right_center",
-            "content_position_mb": "center_top",
-            "content_align": "left",
-            "content_align_mb": "center",
-            "collection_title": "Outdoor",
+            "collection_title": "Pets",
             "text_color": "#ffffff",
             "text_color_mb": "#ffffff",
             "collection_button_switch": true,
@@ -342,10 +279,7 @@
       "block_order": [
         "collection_be7Cg6",
         "collection_V7EFAQ",
-        "collection_yMJKMU",
-        "collection_LhCjyD",
-        "collection_7jfzaA",
-        "collection_BQMxHV"
+        "collection_yMJKMU"
       ],
       "name": "分类系列网格",
       "settings": {
