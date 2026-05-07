@@ -35,6 +35,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
+        "image": "shopify://shop_images/about-us-banner.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -92,6 +93,8 @@
         "row_rThmky": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/about-us-a.jpg",
+            "image_mb": "shopify://shop_images/about-us-a.jpg",
             "caption": "",
             "heading": "What We Offer",
             "text": "<p>At MINDYES, we focus on enhancing everyday outdoor living through thoughtfully designed products, including:</p><p>· Outdoor storage cabinets that keep your space clean and organized </p><p>· Foldable chairs that bring comfort wherever you go </p><p>· Garden hose solutions that make maintenance effortless </p><p>· Pet-friendly outdoor essentials for your furry companions </p><p>· And more innovative products designed for backyard life </p><p>Easy to use, built to last, and made to fit naturally into your outdoor lifestyle.</p>",
@@ -102,6 +105,8 @@
         "row_prMYdc": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/about-us-a.jpg",
+            "image_mb": "shopify://shop_images/about-us-a.jpg",
             "caption": "",
             "heading": "<strong>Our Philosophy</strong>",
             "text": "<p>We believe outdoor living should be:</p><p><strong>Functional</strong> — Smart designs that simplify your daily routines<br/><strong>Flexible</strong> — Products that adapt to different spaces and needs<br/><strong>Durable</strong> — Built to withstand weather and time<br/><strong>Enjoyable</strong> — Because your outdoor space should be lived in, not just looked at</p>",
@@ -112,6 +117,8 @@
         "row_gTVMYg": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/about-us-a.jpg",
+            "image_mb": "shopify://shop_images/about-us-a.jpg",
             "caption": "",
             "heading": "<strong>Designed for Real Life</strong>",
             "text": "<p>Whether you're hosting friends, spending time with family, caring for your pets, or simply enjoying a quiet moment outdoors, MINDYES is here to support the way you live.</p><p>We are not just creating products — we are helping you build a space where memories happen.</p>",
