@@ -105,7 +105,7 @@
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "is_center": false,
-        "title": "Choose Your Sauna",
+        "title": "You May Also Like",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
