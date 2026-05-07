@@ -393,6 +393,7 @@
     },
     "one_image_Azre8f": {
       "type": "one-image",
+      "disabled": true,
       "name": "One Image",
       "settings": {
         "section_width_range1": 2000,
@@ -462,7 +463,7 @@
           "type": "text",
           "settings": {
             "color": "#000",
-            "text": "MINDYES creates outdoor spaces designed for comfort, relaxation, and everyday living under the sun.",
+            "text": "MINDYES creates outdoor spaces designed for comfort, relaxation, and everyday living under the sun. From practical storage to stylish outdoor essentials, we help make every backyard moment more enjoyable.",
             "text_style": "body"
           }
         }
