@@ -9,55 +9,36 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
-      }
-    },
     "image_banner_yrR7yr": {
       "type": "image-banner",
       "blocks": {
         "heading_kQywB9": {
           "type": "heading",
           "settings": {
-            "color": "#000",
-            "heading": "Image banner",
+            "color": "#ffffff",
+            "heading": "More Than Outdoor Living",
             "heading_size": "h1"
           }
         },
         "text_b4hLJX": {
           "type": "text",
           "settings": {
-            "color": "#000",
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "color": "#ffffff",
+            "text": "Built around everyday outdoor essentials, we go beyond simple products to create spaces that inspire comfort, connection, and enjoyment.",
             "text_style": "body"
-          }
-        },
-        "buttons_FCGKQF": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
         "heading_kQywB9",
-        "text_b4hLJX",
-        "buttons_FCGKQF"
+        "text_b4hLJX"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
-        "show_text_box": true,
+        "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "",
         "image_behavior": "none",
@@ -65,10 +46,131 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_KRf97C": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_YW6Gtq": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>About MINDYES</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_Ljf8Ee": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><strong>More Than Just Outdoor Living</strong></h3><p>MINDYES believes every outdoor space is an extension of who you are — with endless possibilities to live, relax, and gather. We embrace reinvention with the philosophy of going beyond simple storage or furniture. To delight our outdoor lovers with not only a clutter-free yard but a life fully enjoyed under the sun.</p><p></p><p></p><h3><strong>Our Story</strong></h3><p>MINDYES was created with a simple idea: outdoor spaces deserve the same attention, comfort, and functionality as the inside of your home.</p><p>From backyard patios to garden corners, from pet-friendly spaces to weekend relaxation zones, we saw an opportunity to rethink how outdoor living products should look, feel, and perform. Instead of bulky, purely functional items, we design and curate products that combine practicality, durability, and modern aesthetics.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_YW6Gtq",
+        "text_Ljf8Ee"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multirow_cmFMcP": {
+      "type": "multirow",
+      "blocks": {
+        "row_rThmky": {
+          "type": "row",
+          "settings": {
+            "caption": "",
+            "heading": "What We Offer",
+            "text": "<p>At MINDYES, we focus on enhancing everyday outdoor living through thoughtfully designed products, including:</p><p>· Outdoor storage cabinets that keep your space clean and organized </p><p>· Foldable chairs that bring comfort wherever you go </p><p>· Garden hose solutions that make maintenance effortless </p><p>· Pet-friendly outdoor essentials for your furry companions </p><p>· And more innovative products designed for backyard life </p><p>Easy to use, built to last, and made to fit naturally into your outdoor lifestyle.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_prMYdc": {
+          "type": "row",
+          "settings": {
+            "caption": "",
+            "heading": "<strong>Our Philosophy</strong>",
+            "text": "<p>We believe outdoor living should be:</p><p><strong>Functional</strong> — Smart designs that simplify your daily routines<br/><strong>Flexible</strong> — Products that adapt to different spaces and needs<br/><strong>Durable</strong> — Built to withstand weather and time<br/><strong>Enjoyable</strong> — Because your outdoor space should be lived in, not just looked at</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_gTVMYg": {
+          "type": "row",
+          "settings": {
+            "caption": "",
+            "heading": "<strong>Designed for Real Life</strong>",
+            "text": "<p>Whether you're hosting friends, spending time with family, caring for your pets, or simply enjoying a quiet moment outdoors, MINDYES is here to support the way you live.</p><p>We are not just creating products — we are helping you build a space where memories happen.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_rThmky",
+        "row_prMYdc",
+        "row_gTVMYg"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_LjcFHK": {
+      "type": "rich-text",
+      "blocks": {
+        "text_y6PEi6": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><strong>Join the MINDYES Lifestyle</strong></h3><p>MINDYES is for those who value simplicity, comfort, and thoughtful design in every corner of their home — inside and out.</p><p>Because outdoor living isn't just about space.<br/>It's about how you live in it.</p><h3><strong>Contact Us</strong></h3><p>If you have any questions regarding returns or refunds, please contact us:</p><p><strong>Email:</strong> service@mindyes.shop</p><p><strong>Business Address (Hong Kong):</strong><br/>Room S009, 2nd Floor, Capital Square, 61-65 Chatham Road South, Hong Kong</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_y6PEi6"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "image_banner_yrR7yr",
-    "main"
+    "main",
+    "rich_text_KRf97C",
+    "multirow_cmFMcP",
+    "rich_text_LjcFHK"
   ]
 }
