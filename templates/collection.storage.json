@@ -16,7 +16,7 @@
           "type": "heading",
           "settings": {
             "color": "#000000",
-            "heading": "Saunas",
+            "heading": "Storage",
             "heading_size": "h0"
           }
         },
@@ -24,7 +24,7 @@
           "type": "text",
           "settings": {
             "color": "#000000",
-            "text": "",
+            "text": "Storage",
             "text_style": "body"
           }
         },
@@ -62,6 +62,7 @@
     },
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": true,
