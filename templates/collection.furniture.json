@@ -16,7 +16,7 @@
           "type": "heading",
           "settings": {
             "color": "#000000",
-            "heading": "Saunas",
+            "heading": "Furniture",
             "heading_size": "h0"
           }
         },
@@ -24,7 +24,7 @@
           "type": "text",
           "settings": {
             "color": "#000000",
-            "text": "Discover the full range of <strong>Outexer®</strong> saunas and experience the benefits of <strong>far infrared</strong> therapy at home. As a trusted <strong>infrared sauna company</strong>, <strong>Outexer</strong> is known for delivering high-quality wellness solutions that combine cutting-edge heating technology with eco-friendly materials.Our collection includes a variety of models to suit every space—from space-saving indoor units to durable <strong>Outexer outdoor saunas</strong> designed for year-round use. Each <strong>Outexer sauna</strong> is built with premium components and optimized for comfort, safety, and efficient <strong>far infrared</strong> heating.Whether you’re shopping for your first <strong>Outexer infrared sauna</strong> or comparing models based on real <strong>Outexer sauna reviews</strong>, we’re here to help you find the perfect fit. Explore our selection and discover why <strong>Outexer</strong> is one of the most trusted names in the infrared sauna market.",
+            "text": "Furniture",
             "text_style": "body"
           }
         },
@@ -46,7 +46,6 @@
         "text_XrKCJi",
         "buttons_8JTGdj"
       ],
-      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image_overlay_opacity": 0,
@@ -63,6 +62,7 @@
     },
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": true,
