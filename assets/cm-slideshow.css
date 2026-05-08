@@ -98,7 +98,7 @@
 }
 
 .cm-slideshow .slide_title-inner {
-    font-size: 36px;
+    font-size: var(--slide-title-font-size-mb);
     font-weight: 700;
     color: var(--text-color-mb);
     line-height: 1.1;
@@ -318,7 +318,7 @@
     }
     
     .cm-slideshow .slide_title-inner {
-        font-size: 48px;
+        font-size: var(--slide-title-font-size);
         color: var(--text-color);
     }
     

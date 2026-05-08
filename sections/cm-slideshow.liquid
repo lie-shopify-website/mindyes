@@ -33,7 +33,7 @@
             { "type": "number", "id": "content_area_width", "label": "内容区域宽度", "default": 530 },
             { "type": "number", "id": "content_area_width_mb", "label": "内容区域宽度 (手机端)", "default": 375 },
 
-            { "type": "header","content":"标题"},
+            { "type": "header","content":"内容"},
             { "type": "select", "id": "content_position", "options": [
                     { "value": "left_top", "label": "左上" },
                     { "value": "left_center", "label": "左中" },
@@ -103,6 +103,9 @@
             "default": "p",
             "label": "大标题标签类型 (SEO优化用)"
             },
+            { "type": "number", "id": "slide_title_font_size", "label": "大标题字体大小", "default": 48 },
+            { "type": "number", "id": "slide_title_font_size_mb", "label": "大标题字体大小 (手机端)", "default": 36 },
+
             { "type": "textarea", "id": "slide_info", "label": "内容" },
 
             { "type": "header","content":"颜色"},
@@ -273,6 +276,8 @@
                                         --sale-label-bg:{{ block.settings.sale_label_bg }};
                                         --sale-label-color-mb:{{ block.settings.sale_label_color_mb }};
                                         --sale-label-bg-mb:{{ block.settings.sale_label_bg_mb }};
+                                        --slide-title-font-size:{{ block.settings.slide_title_font_size }}px;
+                                        --slide-title-font-size-mb:{{ block.settings.slide_title_font_size_mb }}px;
                                     }
                                 </style>
                             </div>

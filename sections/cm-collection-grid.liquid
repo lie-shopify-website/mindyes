@@ -2,6 +2,7 @@
 {
   "name": "分类系列网格",
   "settings": [
+    { "type": "range", "id": "per_row", "label": "每行显示系列数量 (电脑端)", "min": 1, "max": 5, "step": 1, "unit": "列", "default": 3},
     { "type": "header","content":"颜色"},
     { "type": "color", "id": "bg_color", "label": "背景颜色", "default": "#ffffff" },
     { "type": "color", "id": "bg_color_mb", "label": "背景颜色 (手机端)", "default": "#fcf9f1" },
@@ -67,6 +68,8 @@
             },
             
             { "type": "textarea", "id": "collection_title", "label": "系列标题", "info":"若不填写，则使用系列本身标题" },
+            { "type": "number", "id": "collection_title_font_size", "label": "系列标题字体大小", "default": 28 },
+            { "type": "number", "id": "collection_title_font_size_mb", "label": "系列标题字体大小 (手机端)", "default": 24 },
 
             { "type": "header","content":"颜色"},
             { "type": "color", "id": "text_color", "label": "文字颜色", "default": "#ffffff", },
@@ -97,6 +100,7 @@
     [data-section-id="{{ section.id }}"] {
         --bg-color: {{ section.settings.bg_color }}; 
         --bg-color-mb: {{ section.settings.bg_color_mb }};
+        --per-row: {{ section.settings.per_row }};
     }
 </style>
 {{ 'cm-collection-grid.css' | asset_url | stylesheet_tag }}
@@ -149,6 +153,8 @@
                                         --collection-button-bg:{{ block.settings.collection_button_bg }};
                                         --collection-button-color-mb:{{ block.settings.collection_button_color_mb }};
                                         --collection-button-bg-mb:{{ block.settings.collection_button_bg_mb }};
+                                        --collection-title-font-size:{{ block.settings.collection_title_font_size }}px;
+                                        --collection-title-font-size-mb:{{ block.settings.collection_title_font_size_mb }}px;
                                     }
                                 </style>
                             </div>

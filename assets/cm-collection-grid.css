@@ -36,7 +36,7 @@
 
 .cm-collection-grid .main-swiper.cm-desktop-grid .swiper-wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(var(--per-row), 1fr);
     gap: 20px;
     transform: none !important;
     width: 100% !important;
@@ -70,7 +70,7 @@
 }
 
 .cm-collection-grid .swiper-box .content .collection_title {
-    font-size: 24px;
+    font-size: var(--collection-title-font-size-mb);
     font-weight: 700;
     color: var(--text-color-mb);
     line-height: 1.1;
@@ -221,7 +221,7 @@
     }
 
     .cm-collection-grid .swiper-box .content .collection_title {
-        font-size: 28px;
+        font-size: var(--collection-title-font-size);
         color: var(--text-color);
     }
 
