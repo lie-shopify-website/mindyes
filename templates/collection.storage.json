@@ -15,16 +15,16 @@
         "heading_hfj47U": {
           "type": "heading",
           "settings": {
-            "color": "#ffffff",
-            "heading": "Our Most Loved Products",
-            "heading_size": "h1"
+            "color": "#000000",
+            "heading": "Storage",
+            "heading_size": "h0"
           }
         },
         "text_XrKCJi": {
           "type": "text",
           "settings": {
-            "color": "#ffffff",
-            "text": "Time and again, our customers choose",
+            "color": "#000000",
+            "text": "Storage",
             "text_style": "body"
           }
         },
@@ -46,10 +46,11 @@
         "text_XrKCJi",
         "buttons_8JTGdj"
       ],
+      "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/about-us-banner.jpg",
-        "image_overlay_opacity": 40,
-        "image_height": "adapt",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -88,54 +89,11 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "service_icon_RprmDW": {
-      "type": "service-icon",
-      "blocks": {
-        "item_gYc96z": {
-          "type": "item",
-          "settings": {
-            "text": "Free & Fast Shipping"
-          }
-        },
-        "item_c4wL79": {
-          "type": "item",
-          "settings": {
-            "text": "5-Year Warranty"
-          }
-        },
-        "item_zNVfkd": {
-          "type": "item",
-          "settings": {
-            "text": "30-Day Return"
-          }
-        },
-        "item_AQ4BaX": {
-          "type": "item",
-          "settings": {
-            "text": "Easy to Assemble"
-          }
-        }
-      },
-      "block_order": [
-        "item_gYc96z",
-        "item_c4wL79",
-        "item_zNVfkd",
-        "item_AQ4BaX"
-      ],
-      "name": "Service Icon",
-      "settings": {
-        "pc_padding_top": 20,
-        "pc_padding_bottom": 62,
-        "mb_padding_top": 16,
-        "mb_padding_bottom": 16
-      }
     }
   },
   "order": [
     "image_banner_gx4rWH",
     "banner",
-    "product-grid",
-    "service_icon_RprmDW"
+    "product-grid"
   ]
 }

@@ -16,7 +16,7 @@
           "type": "heading",
           "settings": {
             "color": "#ffffff",
-            "heading": "Our Most Loved Products",
+            "heading": "New Arrivals",
             "heading_size": "h1"
           }
         },
@@ -24,7 +24,7 @@
           "type": "text",
           "settings": {
             "color": "#ffffff",
-            "text": "Time and again, our customers choose",
+            "text": "New Arrivals",
             "text_style": "body"
           }
         },
