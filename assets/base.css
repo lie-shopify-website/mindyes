@@ -39,6 +39,16 @@
   }
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+}
+
 /* CSS */
 .swiper:not(.swiper-initialized) { /* 选择未初始化的容器 */
   opacity: 0;
@@ -64,7 +74,7 @@ a {
 }
 
 .announcement-bar-section .utility-bar {
-    background:#e56321;
+    background:#4a6275;
 }
 .announcement-bar-section .announcement-bar__message {
     color: #fff;

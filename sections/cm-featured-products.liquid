@@ -6,6 +6,8 @@
     { "type": "textarea", "id": "section_see_more", "label": "查看更多", "default":"See More"},
     { "type": "collection", "id": "collection", "label": "系列", "info": "模块会按系列里的产品，显示出来" },
     { "type": "range", "id": "limit_products", "label": "最大数量", "min": 1, "max": 20, "step": 1, "unit": "个", "default": 8},
+    { "type": "range", "id": "title_lines", "label": "标题最大行数", "min": 1, "max": 4, "step": 1, "unit": "行", "default": 2},
+    { "type": "range", "id": "title_lines_mb", "label": "标题最大行数 (手机端)", "min": 1, "max": 4, "step": 1, "unit": "行", "default": 2},
     { "type": "header","content":"颜色"},
     { "type": "color", "id": "bg_color", "label": "背景颜色", "default": "transparent" },
     { "type": "color", "id": "bg_color_mb", "label": "背景颜色 (手机端)", "default": "transparent" },
@@ -35,6 +37,8 @@
     [data-section-id="{{ section.id }}"] {
         --bg-color: {{ section.settings.bg_color }}; 
         --bg-color-mb: {{ section.settings.bg_color_mb }};
+        --title-lines: {{ section.settings.title_lines }};
+        --title-lines-mb: {{ section.settings.title_lines_mb }};
     }
 </style>
 {{ 'cm-featured-products.css' | asset_url | stylesheet_tag }}
@@ -56,8 +60,7 @@
                     {% for curr_product in curr_collection.products limit: section.settings.limit_products %}
                         <div class="swiper-slide">
                             <div class="slide-image">
-                                
-                                
+                                <a href="{{ curr_product.url }}"><span class="sr-only">{{ curr_product.title }}</span></a>
                                 {% comment %} 图片 {% endcomment %}
                                 {% liquid
                                     assign pc_src = curr_product.featured_image | image_url: width: image_width

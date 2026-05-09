@@ -1,0 +1,56 @@
+{% schema %}
+{
+  "name": "产品描述",
+  "enabled_on": {
+    "templates": ["product"]
+  },
+  "settings": [
+    { "type": "header", "content": "颜色" },
+    { "type": "color", "id": "bg_color", "label": "背景颜色", "default": "#ffffff" },
+    { "type": "color", "id": "bg_color_mb", "label": "背景颜色 (手机端)", "default": "#ffffff" },
+    { "type": "checkbox", "id": "remove_top_padding", "label": "移除上边距", "default": false },
+    { "type": "checkbox", "id": "remove_bottom_padding", "label": "移除下边距", "default": false },
+    { "type": "text", "id": "custom_class", "label": "自定义类名" }
+  ],
+  "presets": [
+    {
+      "category": "定制模块",
+      "name": "产品描述"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+  [data-section-id="{{ section.id }}"] {
+    --cpd-bg: {{ section.settings.bg_color }};
+    --cpd-bg-mb: {{ section.settings.bg_color_mb }};
+  }
+  .custom-product-description.remove-top-padding {
+    padding-top: 0;
+  }
+  .custom-product-description.remove-bottom-padding {
+    padding-bottom: 0;
+  }
+  [data-section-id="{{ section.id }}"].custom-product-description {
+    background-color: var(--cpd-bg-mb);
+  }
+  @media screen and (min-width: 750px) {
+    [data-section-id="{{ section.id }}"].custom-product-description {
+      background-color: var(--cpd-bg);
+    }
+  }
+</style>
+
+<div
+  class="custom-product-description section-spacing{% if section.settings.remove_top_padding %} remove-top-padding{% endif %}{% if section.settings.remove_bottom_padding %} remove-bottom-padding{% endif %} {{ section.settings.custom_class }}"
+  data-section-id="{{ section.id }}"
+>
+  <div class="container page-width">
+    {%- if product != blank and product.description != blank -%}
+      <div class="product-detail">
+        {{ product.description }}
+      </div>
+    {%- endif -%}
+  </div>
+</div>
