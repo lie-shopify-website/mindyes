@@ -16,7 +16,7 @@
           "type": "heading",
           "settings": {
             "color": "#000000",
-            "heading": "Storage",
+            "heading": "Outdoor",
             "heading_size": "h0"
           }
         },
@@ -24,7 +24,7 @@
           "type": "text",
           "settings": {
             "color": "#000000",
-            "text": "Storage",
+            "text": "outdoor",
             "text_style": "body"
           }
         },
@@ -48,10 +48,11 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
+        "image": "shopify://shop_images/about-us-banner.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
-        "show_text_box": true,
+        "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "",
         "image_behavior": "none",
