@@ -15,7 +15,7 @@
         "heading_hfj47U": {
           "type": "heading",
           "settings": {
-            "color": "#000000",
+            "color": "#ffffff",
             "heading": "Outdoor",
             "heading_size": "h0"
           }
@@ -23,7 +23,7 @@
         "text_XrKCJi": {
           "type": "text",
           "settings": {
-            "color": "#000000",
+            "color": "#ffffff",
             "text": "outdoor",
             "text_style": "body"
           }
@@ -48,7 +48,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/about-us-banner.jpg",
+        "image": "shopify://shop_images/Outdoor-banner.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
