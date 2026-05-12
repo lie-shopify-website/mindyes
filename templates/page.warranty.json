@@ -22,6 +22,7 @@
       "blocks": {
         "heading_y4p6pd": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "color": "#ffffff",
             "heading": "Concerned About Quality and Support?",
@@ -30,6 +31,7 @@
         },
         "text_MHbTXP": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "color": "#ffffff",
             "text": "We offer clear warranty and assistance options. Buy with confidence.",
@@ -56,7 +58,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/about-us-banner.jpg",
+        "image": "shopify://shop_images/warranty-banner.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
