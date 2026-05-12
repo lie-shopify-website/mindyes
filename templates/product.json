@@ -336,7 +336,7 @@
           "settings": {
             "open": true,
             "collapsible_text": "Videos",
-            "collapsible_liquid": "",
+            "collapsible_liquid": "{% if product.metafields.custom.video %}\n  <div class=\"custom-video-wrapper\">\n    {{ product.metafields.custom.video | video_tag: controls: true, class: \"custom-video\", image_size: 'master', autoplay: false, loop: false, muted: false }}\n  </div>\n{% endif %}",
             "collapsible_content": ""
           }
         },
