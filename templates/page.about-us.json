@@ -14,6 +14,7 @@
       "blocks": {
         "heading_kQywB9": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "color": "#ffffff",
             "heading": "More Than Outdoor Living",
@@ -22,6 +23,7 @@
         },
         "text_b4hLJX": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "color": "#ffffff",
             "text": "Built around everyday outdoor essentials, we go beyond simple products to create spaces that inspire comfort, connection, and enjoyment.",
@@ -35,7 +37,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/about-us-banner.jpg",
+        "image": "shopify://shop_images/about_us-banner.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
