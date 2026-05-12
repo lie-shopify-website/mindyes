@@ -336,7 +336,7 @@
           "settings": {
             "open": true,
             "collapsible_text": "Videos",
-            "collapsible_liquid": "{% assign video_url = product.metafields.custom.video.value %}\n{% if video_url != blank %}\n  <div class=\"custom-video-wrapper\">\n    <video controls class=\"custom-video\">\n      <source src=\"{{ video_url }}\" type=\"video/mp4\">\n      您的浏览器不支持视频播放。\n    </video>\n  </div>\n{% endif %}",
+            "collapsible_liquid": "{% assign video_metafield = product.metafields.custom.video %}\n{% if video_metafield != blank %}\n  <!-- 调试：查看实际能访问的属性 -->\n  <!-- {{ video_metafield.value | json }} -->\n  \n  {% assign video_url = video_metafield.value.url %}\n  {% if video_url != blank %}\n    <div class=\"custom-video-wrapper\">\n      <video controls class=\"custom-video\">\n        <source src=\"{{ video_url }}\" type=\"video/mp4\">\n        您的浏览器不支持视频播放。\n      </video>\n    </div>\n  {% endif %}\n{% endif %}",
             "collapsible_content": ""
           }
         },
